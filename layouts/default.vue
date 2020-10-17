@@ -103,6 +103,16 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
+          title: 'People List',
+          to: '/PeopleList'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Person',
+          to: '/Person'
+        },
+        {
+          icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
         },
