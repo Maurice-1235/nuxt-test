@@ -9,16 +9,18 @@
           <th class="text-left">Birthdate</th>
           <th class="text-left">Biodata</th>
           <th class="text-left">Photo URL</th>
+          <th class="text-left"></th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="person in people" :key="person.id" v-on:click="viewdetail(person.id)">
+        <tr v-for="person in people" :key="person.id">
           <td>{{ person.id }}</td>
           <td>{{ person.firstname }}</td>
           <td>{{ person.lastname }}</td>
           <td>{{ person.birthdate }}</td>
           <td>{{ person.biodata }}</td>
           <td>{{ person.photo_url }}</td>
+          <td><v-btn :to="'/person/' + person.id"><v-icon>mdi-open-in-new</v-icon></v-btn></td>
         </tr>
       </tbody>
     </template>
@@ -40,9 +42,9 @@ export default {
       .then((response) => (this.people = response.data));
   },
   methods: {
-      viewdetail(id) {
-          alert(id);
-      }
+    viewdetail(id) {
+      alert(id);
+    },
   },
 };
 </script>

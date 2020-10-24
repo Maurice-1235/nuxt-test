@@ -1,6 +1,7 @@
 <template>
   <div>
       <PeopleList> </PeopleList>
+      <v-btn to="/person/new"><v-icon>mdi-account-plus</v-icon>Add</v-btn>
   </div>
 </template>
 
@@ -13,5 +14,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
+.v-btn{
+  margin-top: 20px;  
+}
 </style>

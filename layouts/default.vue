@@ -102,14 +102,9 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'People List',
-          to: '/PeopleList'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Person',
-          to: '/Person'
+          icon: 'mdi-account',
+          title: 'People',
+          to: '/people'
         },
         {
           icon: 'mdi-chart-bubble',
