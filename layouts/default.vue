@@ -111,11 +111,6 @@ export default {
           title: 'Inspire',
           to: '/inspire'
         },
-        {
-          icon: 'mdi-new-box',
-          title: 'new page',
-          to: '/newpage'
-        }
       ],
       miniVariant: false,
       right: true,
